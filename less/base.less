@@ -1,0 +1,64 @@
+
+.bt{
+    border-top: 1px solid #ccc;
+}
+
+.bb{
+    border-bottom:1px solid #ccc;
+}
+
+.bl{
+    border-left:1px solid #ccc;
+}
+
+.br{
+    border-right:1px solid #ccc; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing:border-box;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+// 一般移动端清除的点击高亮，透明表示去掉
+    -wibkit-tap-highlight-color:transparent;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    border: none;
+    outline: none;
+    // 清除移动端默认样式
+    -webkit-appearance: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.clearfix::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.layout{
+    margin: 0 auto;
+    max-width: 650px;
+    min-width: 320px;
+   
+    background-color: #fff;
+}

@@ -1,0 +1,295 @@
+@import "base.less";
+
+.layout{
+    background-color: #eee;
+}
+
+// 头部开始
+
+#header{
+    background-color: #eee;
+    .top{
+        display: flex;
+        line-height: 40px;
+        padding: 10px;
+        .a-logo{
+       width: 36px;
+       height: 36px;
+       display: inline-block;
+       float: left;
+     
+       >img{
+           width: 100%;
+           
+       }
+        }
+
+        .header-form{
+        float: left;
+        margin-left: 10px;
+        flex: 1;
+        >a{
+            display: inline-block;
+            position: absolute;
+            color: #ccc;
+            left: 65px;
+            top: 22px;
+            font-size: 18px;
+           
+        }
+        >input{
+            padding-left: 30px;
+            width: 100%;
+            height: 35px;
+            font-size: 16px;
+            color: #eee;
+
+        }
+
+        }
+
+        .a-user{
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            float: right;
+            color: #ccc;
+            font-size: 20px;
+            margin-left: 10px;
+           
+            text-align: center;
+        }
+    }
+
+
+
+.nav {
+    width: 100%;
+    overflow: hidden;
+    .nav-tabs {
+        width: 1000px;
+        >li {
+            >a {
+                border: 0;
+                background-color: transparent;
+                color: #333;
+                font-size: 16px;
+            }
+            &.active {
+                >a {
+                    border-bottom: 3px solid orangered;
+                    color: orangered;
+                }
+            }
+        }
+    }
+
+  .tab-content{
+     #home{
+        #slider{
+            .slider-img{
+                display: block;
+                width: 414px;
+                height: 207px;
+                >img{
+                width: 100%;
+                }
+            }
+        }
+
+        .icon{
+            margin-top: 10px;
+            .a-icon{
+                display: block;
+                width: 414px;
+                height: 46px;
+                
+               
+                >img{
+                    width: 100%;
+
+                }
+            }
+        }
+
+        .Mi-hot{
+            width: 100%;
+            
+            display: flex;
+            .Mi-left{
+                margin-right: 3px;
+                flex: 1;
+                position: relative;
+                .a-Mi-left{
+                    display:inline-block;
+                    &::before{
+                        content:'最高减100元';
+                        width: 80px;
+                        height: 20px;
+                        background-color: rgb(235, 96, 84);
+                        color: #fff;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        text-align: center;
+                        line-height: 20px;
+                        font-size: 12px;
+                    }
+                    >img{
+                      width: 100%;
+                    }
+                }
+            }
+
+            .Mi-right{
+                flex: 1;
+                position: relative;
+                .a-Mi-right{
+                    display: inline-block;
+                    &::before{
+                        content:'最高减100元';
+                        width: 80px;
+                        height: 20px;
+                        background-color: rgb(235, 96, 84);
+                        color: #fff;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        text-align: center;
+                        line-height: 20px;
+                        font-size: 12px;
+                    }
+                    >img{
+                   width: 100%;
+                 
+                    }
+                }
+            }
+        }
+
+  
+   #Mi-products{
+       width: 100%;
+       display: flex;
+       background-color: #fff;
+
+       .Mi-products-left{
+         flex: 1;
+           .a-Mi-products-left{
+               display: inline-block;
+               padding-left: 15px;
+            .one-products{
+                margin-top: 10px;
+                color: #000;
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            .two-products{
+                color: rgba(0,0,0,.54);
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+            .three-products{
+                >span{
+                    color: red;
+                    font-size: 15px;
+                }
+                >del{
+                    color: #ccc;
+                    font-size: 12px;
+                }
+            }
+           }
+       }
+
+       .Mi-products-right{
+
+        flex: 1;
+        .a-Mi-products-right{
+            display: inline-block;
+            padding-left: 15px;
+         .one-products{
+             margin-top: 10px;
+          color: #000;
+          font-size: 16px;
+          margin-bottom: 0;
+         }
+         .two-products{
+            color: rgba(0,0,0,.54);
+        font-size: 14px;
+        margin-bottom: 0;
+         }
+         .three-products{
+        
+             >span{
+             color: red;
+             font-size: 15px;
+             }
+             >del{
+             color: #ccc;
+             font-size: 12px;
+             }
+         }
+        }
+    }
+   }
+
+  #red-mi{
+      
+      margin-top: 10px;
+     .red-mi-top{
+         width: 100%;
+         
+         .red-mi-top{
+             display: block;
+             >img{
+             width: 100%;
+             }
+         }
+     }
+
+     .red-mi-bottom{
+        width: 100%;
+         
+         .a-mi-bottom{
+             display: block;
+             >img{
+         width: 100%;
+         
+         
+             }
+         }
+     }
+  }
+
+
+  #footer{
+   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    max-width: 650px;
+    background-color: #fff;
+    >ul{
+        display: flex;
+
+        >li{
+            flex: 1;
+            >a{
+                display: inline-block;
+               >img{
+                width: 65px;
+                height: 50px;
+               }
+            }
+        }
+    }
+}
+
+
+      }
+  }
+
+}
+}
